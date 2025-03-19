@@ -1,0 +1,218 @@
+/* General Dashboard Home Styling */
+.dashboard-home {
+  padding: 20px;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #1e3c72, #2a5298, #0f2027);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  animation: fadeIn 1s ease-in-out;
+  position: relative;
+
+}
+
+/* Header Styling */
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.dashboard-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  background: -webkit-linear-gradient(45deg, #ffcc33, #ff6699);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: slideInDown 1s ease-in-out;
+}
+
+.dashboard-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Task Summary Section */
+.task-summary {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.task-summary h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #ffcc33;
+}
+
+.summary-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Summary Card Styling (Glassmorphism) */
+.summary-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.summary-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.summary-icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.total { border-left: 5px solid #3498db; }
+.completed { border-left: 5px solid #2ecc71; }
+.pending { border-left: 5px solid #f1c40f; }
+.overdue { border-left: 5px solid #e74c3c; }
+
+.summary-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+
+.summary-card p {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.summary-card span {
+  font-size: 1rem;
+  opacity: 0.8;
+  display: block;
+}
+
+/* Quick Actions */
+.quick-actions {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.quick-actions h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #ffcc33;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.action-btn {
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+  color: white;
+  border: none;
+  padding: 14px 22px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+  box-shadow: 0 4px 10px rgba(255, 126, 95, 0.3);
+}
+
+.action-btn:hover {
+  background: linear-gradient(45deg, #ff5f6d, #ffc371);
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(255, 95, 109, 0.4);
+}
+
+/* Productivity Insights */
+.productivity-insights {
+  text-align: center;
+  margin-bottom: 30px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.productivity-insights h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #2ecc71;
+}
+
+.productivity-insights p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Motivation Section */
+.motivation {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  padding: 15px;
+  border-radius: 8px;
+  color: #ffcc33;
+
+}
+
+/* Floating Background Effects */
+.dashboard-home::before,
+.dashboard-home::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.1);
+  filter: blur(80px);
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.dashboard-home::before {
+  top: 10%;
+  left: 10%;
+}
+
+.dashboard-home::after {
+  bottom: 10%;
+  right: 10%;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

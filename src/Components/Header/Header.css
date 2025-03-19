@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/* 🌟 General Navbar Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 8%;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+/* 🏷️ Logo */
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #007bff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.logo:hover {
+  color: #0056b3;
+}
+
+/* 📌 Navigation Container */
+
+
+/* Wrap nav links and auth buttons in one container */
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-grow: 1;
+}
+
+/* 🔗 Navigation Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin-left: 30px;
+  margin-right: 860px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #2c3e50;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.nav-links a:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* 🔒 Authentication Buttons */
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* 🏁 Sign In Button */
+.btn-signin {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #007bff;
+  padding: 8px 12px;
+  border: 1.5px solid #007bff;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn-signin:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* 🚀 Sign Up Button */
+.btn-signup {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn-signup:hover {
+  background-color: #0056b3;
+}

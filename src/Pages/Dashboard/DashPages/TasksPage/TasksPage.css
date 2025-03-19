@@ -1,0 +1,122 @@
+/* Tasks Page Container */
+.tasks-page {
+  padding: 40px 20px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tasks-page h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Task Controls (Search & Filter) */
+.task-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Larger Input Box & Filter */
+.task-controls input,
+.task-controls select {
+  flex: 1;
+  padding: 18px;
+  border-radius: 12px;
+  border: none;
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  transition: all 0.3s ease-in-out;
+  box-shadow: inset 0px 0px 8px rgba(255, 255, 255, 0.3);
+  width: 100%;
+}
+
+/* Placeholder Styling */
+.task-controls input::placeholder {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 18px;
+}
+
+/* Input Focus Effect */
+.task-controls input:focus,
+.task-controls select:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.4);
+}
+
+/* Filter Dropdown Styling */
+.task-controls select {
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  
+}
+
+/* Button Styling */
+.task-controls button {
+  padding: 18px 25px;
+  background: #ff9f43;
+  border: none;
+  border-radius: 12px;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.task-controls select option {
+  background: #1e3c72; /* Dark blue background */
+ 
+}
+/* Button Hover */
+.task-controls button:hover {
+  background: #ff6b2b;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .task-controls {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .task-controls input,
+  .task-controls select {
+    font-size: 18px;
+    padding: 16px;
+  }
+
+  .task-controls button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,86 @@
+/* 📌 Full-Page Auth Section */
+.auth-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  padding: 40px;
+}
+
+/* 🔥 Auth Container (Covering Whole Page) */
+.auth-container {
+  display: flex;
+  width: 80%;
+  max-width: 1200px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  padding: 40px;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* 📌 Individual Auth Boxes */
+.auth-box {
+  width: 45%;
+  padding: 50px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+/* 🎯 Divider Between Sections */
+.divider {
+  width: 3px;
+  background: rgba(255, 255, 255, 0.6);
+  height: 80%;
+  align-self: center;
+}
+
+/* 🔥 Headings & Paragraphs */
+.auth-box h2 {
+  font-size: 26px;
+  color: #1e3c72;
+  margin-bottom: 20px;
+}
+
+.auth-box p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* 📌 Features List */
+.auth-box ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.auth-box ul li {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* 🚀 Auth Buttons */
+.auth-btn {
+  padding: 14px 28px;
+  background: #1e3c72;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+.auth-btn:hover {
+  background: #2a5298;
+  transform: translateY(-3px);
+}

@@ -1,0 +1,132 @@
+/* 🌟 Task Item Container */
+.task-item {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+  padding: 18px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover Effect */
+.task-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.25);
+}
+
+/* 📌 Task Details */
+.task-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* 🎯 Task Title */
+.task-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+/* 📝 Task Description */
+.task-meta {
+  font-size: 14px;
+  opacity: 0.85;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* 🔥 Priority Colors */
+.priority-high {
+  color: #ff4c4c;
+  font-weight: bold;
+}
+
+.priority-medium {
+  color: #ffae42;
+  font-weight: bold;
+}
+
+.priority-low {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+/* 📅 Deadline Styling */
+.task-details p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* ✅ Task Status Styling */
+.task-status {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* 🎯 Task Actions */
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* 🔘 Action Buttons */
+.task-actions button {
+  background: #ff7eb3;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.task-actions button:hover {
+  background: #ff5182;
+  transform: translateY(-3px);
+  box-shadow: 0px 5px 15px rgba(255, 94, 143, 0.4);
+}
+
+/* ✅ Completed Task Styling */
+.task-completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* 🔥 Completed Badge */
+.task-completed::before {
+  content: "✔ Completed";
+  background: rgba(0, 255, 0, 0.8);
+  color: white;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* 🎨 Responsive Design */
+@media (max-width: 768px) {
+  .task-item {
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px;
+  }
+
+  .task-actions {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .task-actions button {
+    width: 100%;
+    text-align: center;
+  }
+}

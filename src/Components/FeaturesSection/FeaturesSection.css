@@ -1,0 +1,50 @@
+/* 🌟 Features Section */
+.features {
+  background: #f8f9fa;
+  padding: 80px 8%;
+  text-align: center;
+}
+
+/* 🏆 Title */
+.features-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+/* 🔍 Subtitle */
+.features-subtitle {
+  font-size: 18px;
+  color: #6c757d;
+  margin-bottom: 40px;
+}
+
+/* 🏗️ Features Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 20px;
+}
+
+/* 🎯 Feature Card */
+.feature-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 🎨 Feature Icons */
+.feature-icon {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
